@@ -1,0 +1,12 @@
+<h1>Add Video</h1>
+<%= form_for @video, url: {action: "create"}, html: {class: ""} do |form| %>
+<%= form.label :name %>
+<%= form.text_field :name %> <br/>
+<%= form.label :presenter %>
+<%= form.text_field :presenter %><br/>
+<%= form.label :duration %>
+<%= form.text_field :duration %><br/>
+<%= form.label :date %>
+<%= form.text_field :date %><br/>
+<%= form.submit value: "Submit"%>
+<% end %>
