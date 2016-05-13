@@ -1,0 +1,21 @@
+.section {
+    border-top: 1px solid lightgrey;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.recommendation-box {
+    float: left;
+}
+
+.recommendation-box p {
+    text-decoration: none;
+    color: #414141;
+    margin: 0;
+}
+
+.tech-talk-box p {
+    text-decoration: none;
+    color: #414141;
+    margin: 0;
+}
