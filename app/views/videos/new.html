@@ -1,12 +1,33 @@
-<h1>Add Video</h1>
-<%= form_for @video, url: {action: "create"}, html: {class: ""} do |form| %>
-<%= form.label :name %>
-<%= form.text_field :name %> <br/>
-<%= form.label :presenter %>
-<%= form.text_field :presenter %><br/>
-<%= form.label :duration %>
-<%= form.text_field :duration %><br/>
-<%= form.label :date %>
-<%= form.text_field :date %><br/>
-<%= form.submit value: "Submit"%>
-<% end %>
+<body>
+
+    <div class="container">
+        <div id="title">
+            <h1>Add to Pivotal Videos</h1>
+        </div>
+        <div id="survey">
+            <h4><a href="/index.html">« Back</a></h4>
+        </div>
+
+        <div class="section">
+            <%= form_for @video, url: {action: "create"}, html: {class: ""} do |form| %>
+                <div class="add-video-label">Talk Name</div>
+                <%= form.text_field :name, :class => 'add-video-field', required: true %>
+                <div class="add-video-label">Presenter(s)</div>
+                <%= form.text_field :presenter, :class => 'add-video-field', required: true %>
+                <div class="add-video-label">Description</div>
+                <%= form.text_area :description, :class => 'description-field', required: true %>
+                <div class="add-video-label">Duration</div>
+                <%= form.text_field :duration, :class => 'add-video-field', required: true  %>
+                <div class="add-video-label">Date</div>
+                <%= form.text_field :date, :class => 'add-video-field', required: true  %>
+                <div class="add-video-label">Link to Talk</div>
+                Need a place to upload your video? Try our <a href="https://drive.google.com/a/pivotal.io/folderview?id=0B2L2KV3WW6d1Zm5oV01PWDhwYmc&usp=sharing" onclick="mixpanel.track('clicked Google Drive');">Google Drive</a>.
+                <p><%= form.text_field :url, :class => 'add-video-field', required: true %></p>
+                <div class="add-video-label">Link to Slides (optional)</div>
+                <%= form.text_field :slides, :class => 'add-video-field'  %>
+                <p></p>
+                <%= form.submit value: "Submit"%>
+            <% end %>
+        </div>
+    </div>
+</body>

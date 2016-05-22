@@ -11,16 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160513190924) do
+ActiveRecord::Schema.define(version: 20160522081758) do
 
   create_table "videos", force: :cascade do |t|
     t.string   "name"
     t.string   "presenter"
     t.string   "url"
-    t.integer  "duration"
-    t.datetime "date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "duration"
+    t.string   "date"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "slides"
+    t.string   "description"
   end
 
 end

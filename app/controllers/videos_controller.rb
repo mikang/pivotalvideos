@@ -7,7 +7,6 @@ class VideosController < ApplicationController
   def create
     @video = Video.new(video_params)
     @video.save
-    puts @video
     redirect_to root_url
   end
 
@@ -17,6 +16,6 @@ class VideosController < ApplicationController
 
   private
   def video_params
-    params.require(:video).permit(:name, :presenter, :url, :duration, :date)
+    params.require(:video).permit(:name, :presenter, :url, :duration, :date, :slides, :description)
   end
 end

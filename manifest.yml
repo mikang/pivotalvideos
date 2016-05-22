@@ -1,0 +1,5 @@
+---
+applications:
+- name: pivotalvideos
+  memory: 1G
+

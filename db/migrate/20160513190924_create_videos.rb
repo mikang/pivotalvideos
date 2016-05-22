@@ -6,7 +6,6 @@ class CreateVideos < ActiveRecord::Migration
       t.string :url
       t.integer :duration
       t.datetime :date
-
       t.timestamps null: false
     end
   end

@@ -1,117 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Pivotal Videos</title>
-    <%= stylesheet_link_tag "index", media: "all" %>
-
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-    for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
-mixpanel.init("ae6ccedae87414598564c1e860afcfc9");</script><!-- end Mixpanel -->
-</head>
 <body>
 <div class="container">
-    <div>
+    <div id="title">
         <h1>Pivotal Videos</h1>
     </div>
-    <div id="survey" class="section">
-        <h2>Welcome! <a href="http://goo.gl/forms/ALV9VISrcl" target="blank" onclick="mixpanel.track('clicked survey');">Please tell us why you're here.</a></h2>
+    <div id="survey">
+        <h4>Welcome! <a href="http://goo.gl/forms/ALV9VISrcl" target="blank" onclick="mixpanel.track('clicked survey');">Please tell us why you're here.</a></h4>
     </div>
     <div class="section">
-        <h2>Recommendations</h2>
-        <div class="row">
+        <div class="section-title">RECOMMENDATIONS</div>
+        <div class="row flex-row">
             <a href="https://www.youtube.com/watch?v=Z_Q4Q8rCVpU" onclick="mixpanel.track('clicked recommendation-BalancedTeam');">
-            <div class="col-lg-4 recommendation-box">
-                <h3>Balanced Team</h3>
-                <p>Janice Fraser</p>
-                <p><i>San Francisco</i></p>
-                <p><i>July 9, 2015</i></p>
-                <p><i>53:54</i></p>
-            </div>
+                <div class="col-lg-4 recommendation-box">
+                    <h4>Balanced Team</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p>Janice Fraser</p>
+                            <p><i>53:54</i></p>
+                        </div>
+                        <div class="col-lg-6 right-align">
+                            <p><i>July 9, 2015</i></p>
+                            <p><i>San Francisco</i></p>
+                        </div>
+                    </div>
+                </div>
             </a>
             <a href="https://www.youtube.com/watch?v=z4297-wLX5c&index=4&list=PLAdzTan_eSPR3RU4yPL4oBJ6nwcsoofnU" onclick="mixpanel.track('clicked recommendation-LeanMicroservices');">
                 <div class="col-lg-4 recommendation-box">
-                    <h3>Building Lean Microservices</h3>
-                    <p>Jeff Taylor</p>
-                    <p><i>Santa Monica</i></p>
-                    <p><i>April 12, 2016</i></p>
-                    <p><i>41:48</i></p>
+                    <h4>Building Lean Microservices</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p>Jeff Taylor</p>
+                            <p><i>41:48</i></p>
+                        </div>
+                        <div class="col-lg-6 right-align">
+                            <p><i>April 12, 2016</i></p>
+                            <p><i>Santa Monica</i></p>
+                        </div>
+                    </div>
                 </div>
             </a>
             <a href="https://www.youtube.com/watch?v=Jq4zwbqCYHc" onclick="mixpanel.track('clicked recommendation-LeanMicroservices');">
                 <div class="col-lg-4 recommendation-box">
-                    <h3>Enterprise Fu</h3>
-                    <p>Mike Dalessio</p>
-                    <p><i>New York</i></p>
-                    <p><i>April 26, 2016</i></p>
-                    <p><i>46:09</i></p>
+                    <h4>Enterprise Fu</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p>Mike Dalessio</p>
+                            <p><i>46:09</i></p>
+                        </div>
+                        <div class="col-lg-6 right-align">
+                            <p><i>April 26, 2016</i></p>
+                            <p><i>New York</i></p>
+                        </div>
+                    </div>
                 </div>
             </a>
         </div>
     </div>
     <div class="section">
-        <h2>Tech Talks</h2>
-        <div class="row">
+        <div class="section-title">TECH TALKS</div>
+        <div class="row flex-row">
+            <a href="https://drive.google.com/a/pivotal.io/folderview?id=0B2t-9W9ZuJpoVlJOTUZGU3BrUzQ&usp=sharing" onclick="mixpanel.track('clicked TechTalks-DC');">
+                <div class="col-sm-2 col-md-2 col-lg-2 tech-talk-box">
+                    <h4>D.C.</h4>
+                    <p>4 videos</p>
+                </div>
+            </a>
             <a href="https://sites.google.com/a/pivotal.io/pivotalwiki/officesandfacilities/palo-alto/tech-talk-videos/pasttechvideos" onclick="mixpanel.track('clicked TechTalks-PaloAlto');">
-            <div class="col-sm-2 col-md-2 col-lg-2 tech-talk-box">
-                <h3>Palo Alto</h3>
-                <p>1 video</p>
-            </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 tech-talk-box">
+                    <h4>Palo Alto</h4>
+                    <p>1 video</p>
+                </div>
             </a>
             <a href="http://original.livestream.com/pivotallabs" onclick="mixpanel.track('clicked TechTalks-NewYork');">
-            <div class="col-sm-2 col-md-2 col-lg-2 tech-talk-box">
-                <h3>New York</h3>
-                <p>4 videos</p>
-            </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 tech-talk-box">
+                    <h4>New York</h4>
+                    <p>174 videos</p>
+                </div>
             </a>
             <a href="https://drive.google.com/a/pivotal.io/folderview?id=0B_HpTC2NK2ogSGtNOXBQUk1WQTQ&usp=sharing" onclick="mixpanel.track('clicked TechTalks-SanFrancisco');">
-            <div class="col-sm-2 col-md-2 col-lg-2 tech-talk-box">
-                <h3>San Francisco</h3>
-                <p>20 videos</p>
-            </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 tech-talk-box">
+                    <h4>San Francisco</h4>
+                    <p>55 videos</p>
+                </div>
             </a>
             <a href="https://www.youtube.com/playlist?list=PLAdzTan_eSPR3RU4yPL4oBJ6nwcsoofnU" onclick="mixpanel.track('clicked TechTalks-SantaMonica');">
                 <div class="col-sm-2 col-md-2 col-lg-2 tech-talk-box">
-                    <h3>Santa Monica</h3>
+                    <h4>Santa Monica</h4>
                     <p>4 videos</p>
                 </div>
             </a>
-            <a href="https://www.youtube.com/playlist?list=PLAdzTan_eSPR3RU4yPL4oBJ6nwcsoofnU" onclick="mixpanel.track('clicked TechTalks-Toronto');">
+            <a href="http://original.livestream.com/pivotallabstoronto" onclick="mixpanel.track('clicked TechTalks-Toronto');">
                 <div class="col-sm-2 col-md-2 col-lg-2 tech-talk-box">
-                    <h3>Toronto</h3>
-                    <p>4 videos</p>
-                </div>
-            </a>
-            <a href="https://drive.google.com/a/pivotal.io/folderview?id=0B2t-9W9ZuJpoVlJOTUZGU3BrUzQ&usp=sharing" onclick="mixpanel.track('clicked TechTalks-DC');">
-                <div class="col-sm-2 col-md-2 col-lg-2 tech-talk-box">
-                    <h3>Washington, D.C.</h3>
-                    <p>4 videos</p>
+                    <h4>Toronto</h4>
+                    <p>162 videos</p>
                 </div>
             </a>
         </div>
     </div>
     <div class="section">
-        <h2>Core Practice Talks</h2>
-        <a href="http://pivotal-guides.cfapps.io/craftsmanship/core-practice-talks/" onclick="mixpanel.track('clicked CorePractice-NY);">Videos on New York's Pivotal Guides</a>
+        <div class="section-title">CORE PRACTICE TALKS</div>
+        <div class="row flex-row-left">
+            <div class="col-sm-2 col-md-2 col-lg-2 core-practice-talk-box">
+                <a href="http://pivotal-guides.cfapps.io/craftsmanship/core-practice-talks/" onclick="mixpanel.track('clicked CorePractice-NY);"><h4>Pivotal Guides</h4></a>
+                <p>37 videos</p>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 core-practice-talk-box">
+                <a href="http://pivotal-guides.cfapps.io/craftsmanship/core-practice-talks/" onclick="mixpanel.track('clicked CorePractice-Wiki);"><h4>Pivotal Wiki</h4></a>
+            </div>
+        </div>
     </div>
     <div class="section">
-        <h2>Individual Talks</h2>
-        Need a place to upload your video? Try our <a href="https://drive.google.com/a/pivotal.io/folderview?id=0B2L2KV3WW6d1Zm5oV01PWDhwYmc&usp=sharing" onclick="mixpanel.track('clicked Google Drive');">Google Drive</a>.
-        <p><button>Add Video</button></p>
-        <div class="row">
+        <div class="section-title">INDIVIDUAL TALKS</div>
+        <%= link_to "Add Video", new_video_path, class: "btn btn-primary", onclick: "mixpanel.track('clicked button-addvideo')" %>
+        <div class="row individual-talk-header">
             <div class="col-sm-2 col-md-2 col-lg-2">
                 Talk Name
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                Description
             </div>
             <div class="col-sm-2 col-md-2 col-lg-2">
                 Presenter Name
@@ -123,25 +129,51 @@ mixpanel.init("ae6ccedae87414598564c1e860afcfc9");</script><!-- end Mixpanel -->
                 Date
             </div>
         </div>
-        <div class="row">
-            <a href="https://drive.google.com/a/pivotal.io/folderview?id=0B2L2KV3WW6d1Zm5oV01PWDhwYmc&usp=sharing"><div class="col-sm-2 col-md-2 col-lg-2">
-                Tend Opportunity Sprint
-            </div></a>
-            <div class="col-sm-2 col-md-2 col-lg-2">
-                Jay Badenhope, Andi Plantenberg
+        <div class="individual-talk-container">
+            <% Video.all.each do |video| %>
+            <div class="row individual-talk">
+                <a href="<%= video.url %>"><div class="col-sm-2 col-md-2 col-lg-2">
+                    <%= video.name %>
+                </div></a>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <%= video.description %>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <%= video.presenter %>
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1">
+                    <%= video.duration %>
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1">
+                    <%= video.date %>
+                </div>
+                <a href="<%= video.slides %>" onclick="mixpanel.track('clicked IndividualTalk-TendSprint-Slides');"><div class="col-sm-2 col-md-2 col-lg-2">
+                    Slides
+                </div></a>
             </div>
-            <div class="col-sm-2 col-md-2 col-lg-2">
-                19:04
-            </div>
-            <div class="col-sm-2 col-md-2 col-lg-2">
-                05/12/16
-            </div>
-            <a href="https://drive.google.com/a/pivotal.io/folderview?id=0B2L2KV3WW6d1Zm5oV01PWDhwYmc&usp=sharing" onclick="mixpanel.track('clicked IndividualTalk-TendSprint-Slides');"><div class="col-sm-2 col-md-2 col-lg-2">
-                Slides
-            </div></a>
+            <% end %>
         </div>
+        <!--<div class="row">-->
+            <!--<a href="https://drive.google.com/a/pivotal.io/folderview?id=0B2L2KV3WW6d1Zm5oV01PWDhwYmc&usp=sharing"><div class="col-sm-2 col-md-2 col-lg-2">-->
+                <!--Tend Opportunity Sprint-->
+            <!--</div></a>-->
+            <!--<div class="col-sm-2 col-md-2 col-lg-2">-->
+                <!--Jay Badenhope, Andi Plantenberg-->
+            <!--</div>-->
+            <!--<div class="col-sm-2 col-md-2 col-lg-2">-->
+                <!--19:04-->
+            <!--</div>-->
+            <!--<div class="col-sm-2 col-md-2 col-lg-2">-->
+                <!--05/12/16-->
+            <!--</div>-->
+            <!--<a href="https://drive.google.com/a/pivotal.io/folderview?id=0B2L2KV3WW6d1Zm5oV01PWDhwYmc&usp=sharing" onclick="mixpanel.track('clicked IndividualTalk-TendSprint-Slides');"><div class="col-sm-2 col-md-2 col-lg-2">-->
+                <!--Slides-->
+            <!--</div></a>-->
+        <!--</div>-->
     </div>
 </div>
+
+
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -1,1 +1,167 @@
+@import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background: #E2F0EE; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, #B3D9D4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, #B3D9D4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, #B3D9D4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, #B3D9D4); /* Standard syntax */
+  color: #4D5B5A;
+  min-height: 100vh;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+#survey {
+  margin-top: 20px;
+}
+
+.section {
+  border-bottom: 1px solid #DEEDEC;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.section-title {
+  color: #818E8D;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+}
+
+.flex-row-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  margin-left: 0px;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.recommendation-box {
+  width: 370px;
+  background-color: white;
+  border: 1px solid #B2DBD7;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px 20px 20px 20px;
+}
+
+.recommendation-box:hover {
+  background-color: #DBEBE9;
+}
+
+.recommendation-box p {
+  text-decoration: none;
+  color: #414141;
+  margin: 0;
+}
+
+.tech-talk-box {
+  background-color: white;
+  border: 1px solid #B2DBD7;
+  width: 180px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px 20px 20px 20px;
+}
+
+.tech-talk-box:hover {
+  background-color: #DBEBE9;
+}
+
+.tech-talk-box p {
+  text-decoration: none;
+  color: #414141;
+  margin: 0;
+}
+
+.core-practice-talk-box {
+  background-color: white;
+  border: 1px solid #B2DBD7;
+  width: 180px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px 20px 20px 20px;
+  margin-right: 20px;
+}
+
+.core-practice-talk-box:hover {
+  background-color: #DBEBE9;
+}
+
+.individual-talk-header {
+  margin-left: 0px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.individual-talk-container {
+  background-color: white;
+  border: 1px solid #B2DBD7;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.individual-talk {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 0px;
+  border-bottom: 1px solid #DBEBE9;
+}
+
+.addvideo-links {
+  margin-top: 60px;
+}
+
+.add-video-label {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #818E8D;
+  text-transform: uppercase;
+}
+
+.add-video-field {
+  width: 600px;
+  height: 50px;
+  border: 1px solid #B2DBD7;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-family: "Lato";
+  font-size: 18px;
+  padding: 10px;
+}
+
+.add-video-field:active {
+  border: 1px solid red;
+}
+
+.description-field {
+  width: 600px;
+  height: 150px;
+  border: 1px solid #B2DBD7;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-family: "Lato";
+  font-size: 18px;
+  padding: 10px;
+}
