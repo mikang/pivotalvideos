@@ -52,7 +52,6 @@ h2 {
 }
 
 .recommendation-box {
-  width: 370px;
   background-color: white;
   border: 1px solid #B2DBD7;
   -webkit-border-radius: 3px;
@@ -71,14 +70,19 @@ h2 {
   margin: 0;
 }
 
+#add-office {
+  background-color: #FCF1CF;
+  border: 1px solid #EBD798;
+}
+
 .tech-talk-box {
   background-color: white;
   border: 1px solid #B2DBD7;
-  width: 180px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   padding: 10px 20px 20px 20px;
+  margin-bottom: 15px;
 }
 
 .tech-talk-box:hover {
@@ -89,6 +93,24 @@ h2 {
   text-decoration: none;
   color: #414141;
   margin: 0;
+}
+
+@media only screen and (min-width: 780px) {
+  .recommendation-box-width {
+    width: calc(100%/3 - 10px);
+  }
+  .tech-talk-box-width {
+    width: calc(100%/4 - 10px);
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .recommendation-box-width {
+    width: calc(100%);
+  }
+  .tech-talk-box-width {
+    width: calc(100%/2 - 10px);
+  }
 }
 
 .core-practice-talk-box {
